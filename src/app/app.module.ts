@@ -1,5 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, LOCALE_ID } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
@@ -39,7 +39,7 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     RouterModule.forRoot(ROUTES),
     HttpModule
   ],
-  providers: [RestaurantsService,ShoppingCartService],
+  providers: [RestaurantsService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
