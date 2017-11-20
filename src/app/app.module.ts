@@ -39,7 +39,7 @@ import { ShoppingCartService } from './restaurant-detail/shopping-cart/shopping-
     RouterModule.forRoot(ROUTES),
     HttpModule
   ],
-  providers: [RestaurantsService, ShoppingCartService, {provide: LOCALE_ID, useValue: 'pt-BR'}],
+  providers: [RestaurantsService, ShoppingCartService/*, {provide: LOCALE_ID, useValue: 'pt-BR'}*/],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
